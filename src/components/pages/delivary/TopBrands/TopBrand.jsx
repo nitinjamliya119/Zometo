@@ -122,7 +122,7 @@ export default function TopBrand() {
       // scrollBy use karo smooth scrolling ke liye.
       // Use scrollBy for smooth scrolling.
       carouselRef.current.scrollBy({ left: -scrollAmount, behavior: 'smooth' });
-
+    
       // currentIndex ko update karo taaki button disabling theek se kaam kare.
       // Update currentIndex to reflect the new starting card for button disabling.
       setCurrentIndex((prevIndex) => Math.max(prevIndex - cardsPerPage, 0));
