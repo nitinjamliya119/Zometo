@@ -21,7 +21,7 @@ function Navbar() {
         
         <div className="flex  gap-4 justify-center">
          
-          <Link to="/login"><button className=" py-1 rounded-md">Login</button></Link>
+          <Link to="/login"><button className=" py-1 rounded-md ">Login</button></Link>
           <Link to="/singnup"><button className=" py-1 rounded-md">Singn up</button></Link>
         </div>
         
@@ -31,8 +31,8 @@ function Navbar() {
 
         <Link to="/dinning">
           <button> 
-            <div className='flex  items-center'>
-              <div className=' p-1.5 w-12 rounded-3xl bg-gray-200'><img src="src/components/Photos/D-logo-1.avif" alt="" /></div> 
+            <div className='flex  items-center  p-1 rounded-3xl hover:border-1 hover:border-red-500'>
+              <div className=' p-1.5 w-12 rounded-3xl bg-gray-200 '><img src="src/components/Photos/D-logo-1.avif" alt="" /></div> 
               <div>Dinning Out</div>
             </div>
           </button>
@@ -40,7 +40,7 @@ function Navbar() {
         
         <Link to='/delevry'>
           <button>
-            <div className='flex  items-center'>
+            <div className='flex  items-center  p-1 rounded-3xl hover:border-1 hover:border-red-500'>
             <div className='  p-1.5 w-12 rounded-3xl bg-gray-200'><img src="src/components/Photos/D-logo-2.webp" alt="" /></div>
             <div>Delevery</div>
             </div>

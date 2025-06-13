@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom';
 
 function Singnup() {
   return (
@@ -18,9 +19,12 @@ function Singnup() {
             <input className='w-full px-3 py-2 border rounded' type='password' id='password' name='password' required />
             </div>
             <button className='w-full bg-blue-500 text-white py-2 rounded hover:bg-blue-600 transition duration-200' type='submit'>Sign Up</button>
+          
 
         </form>
       <p className='mt-4 text-gray-600'>Already have an account? <a href='/login' className='text-blue-500 hover:underline'>Login</a></p>
+
+           <Link to="/"> <button className='w-30% bg-transprant text-blue-600 py-2 mt-4 rounded  transition duration-200' type='submit'> Go to Home Page</button></Link>
     </div>
     
       
