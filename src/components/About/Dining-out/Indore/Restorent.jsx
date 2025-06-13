@@ -150,10 +150,10 @@ function Restorent() {
   ];
   return (<>
     
-  
-        
-        <div className="font-normal text-3xl flex justify-center items-center">Restaurants in Indore
-        </div>
+    <div className="  flex flex-col items-center justify-center p-4 font-sans">
+        <div className="w-full max-w-6xl relative">
+        <h1 className="text-2xl md:text-3xl font-bold text-gray-800 mb-6 text-left px-4">Restaurants in Indore</h1>
+       
         
         
         <div  className=" p-4 w-60% flex flex-wrap justify-center items-center gap-6 font-inter">
@@ -170,9 +170,9 @@ function Restorent() {
         />
       ))}
         </div>
-      
+      </div>
    
-    
+    </div>
   </>);
 }
 
