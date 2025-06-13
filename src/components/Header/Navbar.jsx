@@ -2,25 +2,7 @@ import React, { useState, useRef, useEffect } from 'react';
 import {Link } from 'react-router-dom'
 
 function Navbar() {
-  const [isOffcanvasOpen, setIsOffcanvasOpen] = useState(false);
-  const offcanvasRef = useRef(null);
-  const toggleOffcanvas = () => {
-    setIsOffcanvasOpen(true);
-  };
-  const closeOffcanvas = () => {
-    setIsOffcanvasOpen(false);
-  };
-  useEffect(() => {
-    const handleEscapeKey = (event) => {
-      if (event.key === 'Escape') {
-        closeOffcanvas();
-      }
-    };
-    document.addEventListener('keydown', handleEscapeKey);
-    return () => {
-      document.removeEventListener('keydown', handleEscapeKey);
-    };
-  }, []);
+ 
   return (<>
 
     <div>
@@ -39,7 +21,7 @@ function Navbar() {
         
         <div className="flex  gap-4 justify-center">
          
-          <button className=" py-1 rounded-md">Login</button>
+          <Link to="/login"><button className=" py-1 rounded-md">Login</button></Link>
           <button className=" py-1 rounded-md">Sing up</button>
         </div>
         
