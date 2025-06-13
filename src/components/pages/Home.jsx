@@ -1,17 +1,15 @@
 import React from 'react'
 import Navbar from '../Header/Navbar'
-import DiningOut from '../About/DiningOut'
+import DiningOut from '../About/Dining-out/DiningOut'
 
 
 function Home() {
   return (<>
        <Navbar/>
-
-       <div className='flex flex-col justify-center'>
        <DiningOut/>
 
         
-       </div>
+       
 
 
     </>)
