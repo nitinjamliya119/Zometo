@@ -1,12 +1,14 @@
 import React from 'react'
 import Navbar from '../Header/Navbar'
-import DiningOut from '../About/Dining-out/DiningOut'
+import Fotter from '../Fotter/Fotter'
+
 
 
 function Home() {
   return (<>
+
        <Navbar/>
-       <DiningOut/>
+       <Fotter/>
        
        
 

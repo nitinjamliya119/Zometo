@@ -2,7 +2,7 @@ import React from "react";
 import ProductCard from '../delivary/FirstOrder/ProductCard';
 import TopBrand from '../delivary/TopBrands/TopBrand';
 import FoodDelivaryFinal from '../delivary/FoodDelivary/FoodDelivaryFinal';
-import Fotter from "../../Fotter/Fotter";
+
 
 export default function Final(){
 
@@ -13,7 +13,7 @@ export default function Final(){
                   <ProductCard/>
                   <TopBrand/>
                   <FoodDelivaryFinal/>
-                  <Fotter/>
+           
 
                   
                
