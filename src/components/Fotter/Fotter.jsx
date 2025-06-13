@@ -1,4 +1,6 @@
 import React from 'react'
+import { FaLinkedin, FaInstagram, FaTwitter, FaFacebook } from "react-icons/fa";
+
 
  export default function Fotter() {
   return (
@@ -86,17 +88,18 @@ import React from 'react'
               <h3 className="font-bold text-gray-800 tracking-wider mb-4">SOCIAL LINKS</h3>
               <div className="flex space-x-4 mb-6">
                 <a href="#" className="text-gray-600 hover:text-red-500 transition-colors duration-200 text-2xl" aria-label="LinkedIn">
-                  &#x2139;
+                  <FaLinkedin />
                 </a>
                 <a href="#" className="text-gray-600 hover:text-red-500 transition-colors duration-200 text-2xl" aria-label="Instagram">
-                  &#x2139;
+                  <FaInstagram />
                 </a>
                 <a href="#" className="text-gray-600 hover:text-red-500 transition-colors duration-200 text-2xl" aria-label="Twitter">
-                  &#x2139;
+                  <FaTwitter />
                 </a>
                 <a href="#" className="text-gray-600 hover:text-red-500 transition-colors duration-200 text-2xl" aria-label="Facebook">
-                  &#x2139;
+                  <FaFacebook />
                 </a>
+              </div>
               </div>
 
               <div className="space-y-4">
@@ -108,7 +111,7 @@ import React from 'react'
                 </a>
               </div>
             </div>
-          </div>
+          
 
           <div className="pt-8 border-t border-gray-200 mt-8 text-xs text-gray-500 leading-relaxed">
             <p>By continuing past this page, you agree to our Terms of Service, Cookie Policy, Privacy Policy and Content Policies. All trademarks are properties of their respective owners. &copy; 2008-2025 Zomato Ltd. All rights reserved.</p>
