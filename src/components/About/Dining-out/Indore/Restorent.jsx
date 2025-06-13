@@ -157,9 +157,9 @@ function Restorent() {
         
         
         <div  className=" p-4 w-60% flex flex-wrap justify-center items-center gap-6 font-inter">
-          {foodItems.map((item) => (
+          {foodItems.map((item,index) => (
         <Cards
-          key={item.id}
+          key={index}
           image={item.image}
           discount={item.discount}
           name={item.name}

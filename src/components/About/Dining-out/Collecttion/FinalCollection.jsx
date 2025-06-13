@@ -98,7 +98,7 @@ function FinalCollection() {
     <>
     <div className="  flex flex-col items-center justify-center p-4 font-sans text-gray-900 dark:text-gray-100  bg-gray-100">
       <div className="w-full max-w-6xl relative">
-     <h2 className="text-2xl md:text-3xl font-semibold text-gray-800 mb-6 text-left px-4">Collections</h2> 
+     <h2 className="text-2xl md:text-3xl font-semibold text-gray-800 mb-6 text-left px-3">Collections</h2> 
       <div className="font-normal text-xl text-gray-500 pl-5">Explore curated lists of top restaurants, cafes, pubs, and bars in Indore, based on trends</div>
      </div>
      
