@@ -6,6 +6,7 @@ import Fotter from './components/Fotter/Fotter'
 import Home from './components/pages/Home'
 import Final from './components/pages/Final/Final'
 import DiningOut from './components/About/Dining-out/DiningOut'
+import Login from './components/pages/login'
 
 function App() {
   return (
@@ -23,6 +24,9 @@ function App() {
           <Route path="/home" element={<Home />} />
           <Route path="/delevry" element={<Final />} />
           <Route path="/dinning" element={<DiningOut />} />
+          <Route path="/login" element={<Login />} />
+          
+
         </Routes>
 
         <Fotter />
