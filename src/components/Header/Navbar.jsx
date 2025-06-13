@@ -25,8 +25,8 @@ function Navbar() {
       </div>
 
       <div className='flex p-2 justify-center justify-evenly  items-center border-b border-gray-300 flex-wrap gap-20 w-80%'> 
-     <Link to='/delevry'><button>Delevery</button></Link>
       <Link to="/dinning"><button> Dinning Out</button></Link>
+     <Link to='/delevry'><button>Delevery</button></Link>
       </div>
 
     </div>

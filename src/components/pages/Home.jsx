@@ -1,14 +1,12 @@
 import React from 'react'
-import Navbar from '../Header/Navbar'
-import Fotter from '../Fotter/Fotter'
+
 
 
 
 function Home() {
   return (<>
 
-       <Navbar/>
-       <Fotter/>
+       <div>Nitin JAmliya its HOme PAge</div>
        
        
 
