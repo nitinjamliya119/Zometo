@@ -1,8 +1,33 @@
-import React from 'react'
+import React, { useState, useRef, useEffect } from 'react';
+import {Link } from 'react-router-dom'
 
 function Navbar() {
-  return (
-   <div className="flex p-2 justify-center justify-evenly   items-center border-b border-gray-300 flex-wrap gap-20 w-80%">
+  const [isOffcanvasOpen, setIsOffcanvasOpen] = useState(false);
+  const offcanvasRef = useRef(null);
+  const toggleOffcanvas = () => {
+    setIsOffcanvasOpen(true);
+  };
+  const closeOffcanvas = () => {
+    setIsOffcanvasOpen(false);
+  };
+  useEffect(() => {
+    const handleEscapeKey = (event) => {
+      if (event.key === 'Escape') {
+        closeOffcanvas();
+      }
+    };
+    document.addEventListener('keydown', handleEscapeKey);
+    return () => {
+      document.removeEventListener('keydown', handleEscapeKey);
+    };
+  }, []);
+  return (<>
+
+    <div>
+
+      
+      
+       <div className="flex p-2 justify-center justify-evenly  items-center border-b border-gray-300 flex-wrap gap-20 w-80%">
     
         <div className="flex items-center">
         <img src="src/components/Photos/logo.avif" className="w-30 h-8"/>
@@ -10,20 +35,41 @@ function Navbar() {
     
         <div className="">
         <input type="text" placeholder="Search for restaurant" className="border border-gray-200 rounded-md py-1 px-2"/>
-       
         </div>
         
         <div className="flex  gap-4 justify-center">
-       
-        <button className=" py-1 rounded-md">Login</button>
-      
-        <button className=" py-1 rounded-md">Sing up</button>
-      
-
+         
+          <button className=" py-1 rounded-md">Login</button>
+          <button className=" py-1 rounded-md">Sing up</button>
         </div>
+        
+      </div>
+
+      <div className='flex p-2 justify-center justify-evenly  items-center border-b border-gray-300 flex-wrap gap-20 w-80%'> 
+
+        <Link to="/dinning">
+          <button> 
+            <div className='flex  items-center'>
+              <div className=' p-1.5 w-12 rounded-3xl bg-gray-200'><img src="src/components/Photos/D-logo-1.avif" alt="" /></div> 
+              <div>Dinning Out</div>
+            </div>
+          </button>
+        </Link>
+        
+        <Link to='/delevry'>
+          <button>
+            <div className='flex  items-center'>
+            <div className='  p-1.5 w-12 rounded-3xl bg-gray-200'><img src="src/components/Photos/D-logo-2.webp" alt="" /></div>
+            <div>Delevery</div>
+            </div>
+          </button>
+        </Link>
+
+      </div>
 
     </div>
-  )
+        
+  </>)
 }
 
 export default Navbar
