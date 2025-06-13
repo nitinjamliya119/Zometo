@@ -96,9 +96,12 @@ function FinalCollection() {
 
   return (
     <>
-    <div className='bg-gray-100 flex flex-col items-center w-60%   '>
-      <div className="font-normal text-3xl">Collections</div>
-      <div className="font-normal text-xl text-gray-500 ">Explore curated lists of top restaurants, cafes, pubs, and bars in Indore, based on trends</div>
+    <div className="  flex flex-col items-center justify-center p-4 font-sans text-gray-900 dark:text-gray-100  bg-gray-100">
+      <div className="w-full max-w-6xl relative">
+     <h2 className="text-2xl md:text-3xl font-semibold text-gray-800 mb-6 text-left px-4">Collections</h2> 
+      <div className="font-normal text-xl text-gray-500 pl-5">Explore curated lists of top restaurants, cafes, pubs, and bars in Indore, based on trends</div>
+     </div>
+     
 
     </div>
   
@@ -132,7 +135,7 @@ function FinalCollection() {
             </div>
           ))}
         </div>
-
+ 
         <button
           onClick={scrollToPrev}
           disabled={currentIndex === 0}
@@ -158,7 +161,7 @@ function FinalCollection() {
         </button>
       </div>
     </div>
-    
+  
           
           </>);
 };
