@@ -7,6 +7,7 @@ import Home from './components/pages/Home'
 import Final from './components/pages/Final/Final'
 import DiningOut from './components/About/Dining-out/DiningOut'
 import Login from './components/pages/login'
+import Singnup from './components/pages/Singnup'
 
 function App() {
   return (
@@ -15,14 +16,16 @@ function App() {
         <Navbar />
 
         <Routes>
-          {/* ✅ Redirect root to Final */}
+        
           <Route path="/" element={<Navigate to="/dinning" />} />
-
-         
+          
           <Route path="/home" element={<Home />} />
           <Route path="/delevry" element={<Final />} />
           <Route path="/dinning" element={<DiningOut />} />
           <Route path="/login" element={<Login />} />
+          <Route path="/singnup" element={<Singnup />} />
+          
+          
           
 
         </Routes>

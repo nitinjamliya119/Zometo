@@ -22,7 +22,7 @@ function Navbar() {
         <div className="flex  gap-4 justify-center">
          
           <Link to="/login"><button className=" py-1 rounded-md">Login</button></Link>
-          <button className=" py-1 rounded-md">Sing up</button>
+          <Link to="/singnup"><button className=" py-1 rounded-md">Singn up</button></Link>
         </div>
         
       </div>
