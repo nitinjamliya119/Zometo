@@ -7,7 +7,7 @@ import React from 'react'
         <div className="max-w-7xl mx-auto">
           <div className="flex flex-col md:flex-row justify-between items-center pb-8 border-b border-gray-200 mb-8">
             <div className="mb-4 md:mb-0">
-              <img src="https://placehold.co/120x30/EF4444/ffffff?text=zomato" alt="Zomato Logo" className="h-8 rounded" />
+              <img src="src/components/Photos/logo.avif" alt="Zomato Logo" className="h-8 rounded" />
             </div>
 
             <div className="flex space-x-4">

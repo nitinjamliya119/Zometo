@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 function login() {
   return (
@@ -15,6 +16,7 @@ function login() {
         </div>
         <button type="submit" className="w-full bg-blue-500 text-white py-2 rounded hover:bg-blue-600">Login</button>
       </form>
+      <Link to="/"> <button className='w-30% bg-transprant text-blue-600 py-2 mt-4 rounded  transition duration-200' type='submit'> Go to Home Page</button></Link>
     </div>
   )
 }
