@@ -1,6 +1,6 @@
 import './App.css'
 import React from 'react'
-import { BrowserRouter as Router, Route, Routes, Navigate } from 'react-router-dom' // ✅ Add Navigate
+import { BrowserRouter as Router, Route, Routes, Navigate } from 'react-router-dom' 
 import Navbar from './components/Header/Navbar'
 import Fotter from './components/Fotter/Fotter'
 import Home from './components/pages/Home'
@@ -18,9 +18,7 @@ function App() {
           {/* ✅ Redirect root to Final */}
           <Route path="/" element={<Navigate to="/dinning" />} />
 
-          {/* You can switch to /dinning instead if you want that as default */}
-          {/* <Route path="/" element={<Navigate to="/dinning" />} /> */}
-
+         
           <Route path="/home" element={<Home />} />
           <Route path="/delevry" element={<Final />} />
           <Route path="/dinning" element={<DiningOut />} />
