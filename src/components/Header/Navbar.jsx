@@ -1,7 +1,15 @@
-import React from 'react'
-import {Link } from 'react-router-dom'
+import React,{useEffect} from 'react'
+import {Link ,useLocation } from 'react-router-dom'
 
 function Navbar() {
+   const location = useLocation();
+
+ const getLinkClasses = (path) => {
+  return location.pathname === path 
+    ? 'flex items-center p-1 rounded-3xl border border-red-500  border-red-500 text-red-600'  // Active
+    : 'flex items-center p-1 rounded-3xl hover:border hover:border-red-500 text-gray-600'; // Inactive
+};
+
  
   return (<>
 
@@ -31,7 +39,7 @@ function Navbar() {
 
         <Link to="/dinning">
           <button> 
-            <div className='flex ml-20 items-center  p-1 rounded-3xl hover:border-1 hover:border-red-500'>
+            <div className='flex  items-center  p-1 rounded-3xl hover:border-1 hover:border-red-500'>
               <div className=' p-1.5 w-12 rounded-3xl bg-gray-200 '><img src="src/components/Photos/D-logo-1.avif" alt="" /></div> 
               <div>Dinning Out</div>
             </div>

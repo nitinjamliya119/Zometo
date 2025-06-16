@@ -155,10 +155,11 @@ function Restorent() {
         <h1 className="text-2xl md:text-3xl font-bold text-gray-800 mb-6 text-left px-4">Restaurants in Indore</h1>
     </div>
         
-    <div  className=" w-60% ml-20 mb-10 flex flex-wrap  gap-6 font-inter">
+        
+        <div  className=" p-4 w-60% flex flex-wrap justify-center items-center gap-6 font-inter">
           {foodItems.map((item) => (
         <Cards
-          key={item.id}
+          key={index}
           image={item.image}
           discount={item.discount}
           name={item.name}
