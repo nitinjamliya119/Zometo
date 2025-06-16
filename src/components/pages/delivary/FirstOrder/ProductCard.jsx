@@ -132,11 +132,11 @@ export default function ProductCard() {
   return (
     // Poore page ka container, center mein align karne ke liye.
     // Container for the entire page, to align it in the center.
-    <div className=" bg-gray-100 flex flex-col items-center justify-center p-4 font-sans ">
-      <div className="w-full max-w-6xl relative h-fit">
+    <div className=" bg-gray-100  flex flex-col font-sans ">
+      <div className="w-full  ml-20 max-w-6xl relative h-fit">
         {/* Carousel Title: Naya title jo image mein dikh raha hai. */}
         {/* Carousel Title: The new title visible in the image. */}
-        <h2 className="text-2xl md:text-3xl font-bold text-gray-800 mb-6 text-left px-4">
+        <h2 className="text-2xl md:text-3xl font-bold text-gray-800 mb-6 text-left ">
           Inspiration for your first order
         </h2>
 

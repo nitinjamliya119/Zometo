@@ -150,13 +150,12 @@ function Restorent() {
   ];
   return (<>
     
-    <div className="  flex flex-col items-center justify-center p-4 font-sans">
-        <div className="w-full max-w-6xl relative">
+
+    <div className="w-full ml-20 max-w-6xl relative">
         <h1 className="text-2xl md:text-3xl font-bold text-gray-800 mb-6 text-left px-4">Restaurants in Indore</h1>
-       
+    </div>
         
-        
-        <div  className=" p-4 w-60% flex flex-wrap justify-center items-center gap-6 font-inter">
+    <div  className=" w-60% ml-20 mb-10 flex flex-wrap  gap-6 font-inter">
           {foodItems.map((item) => (
         <Cards
           key={item.id}
@@ -169,10 +168,10 @@ function Restorent() {
           deliveryTime={item.deliveryTime}
         />
       ))}
-        </div>
-      </div>
-   
     </div>
+     
+   
+    
   </>);
 }
 
